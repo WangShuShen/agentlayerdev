@@ -1,0 +1,1 @@
+[INFO] time: 2023-11-02 05:48:49, module: data_mgt, actor: app_metadata_manager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
