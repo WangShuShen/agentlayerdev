@@ -64,6 +64,6 @@ echo "Updating main/urls.py to include API URLs for $app_name"
 # Add import statement if it doesn't exist
 sed -i "s/from django.urls import path/&, include/" "main/urls.py"
 # Add new path to urlpatterns
-sed -i "/urlpatterns = \[/a \    path('api\/$app_name\/', include('main.apps.$app_name.api.urls'))," "main/urls.py"
+sed -i "/urlpatterns = \[/a \    path('api\/1.0\/', include('main.apps.$app_name.api.urls'))," "main/urls.py"
 # Output success message
 echo "Files for Django app $app_name have been modified successfully!"
