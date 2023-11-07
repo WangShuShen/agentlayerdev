@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DataMgtConfig(AppConfig):
+class CentralLayerDataMgtConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'main.apps.data_mgt'
+    name = 'main.apps.central_layer_data_mgt'

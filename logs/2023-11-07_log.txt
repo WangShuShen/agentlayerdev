@@ -1,0 +1,1 @@
+[INFO] time: 2023-11-07 06:01:09, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}

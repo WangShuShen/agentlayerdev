@@ -1,5 +1,5 @@
 """
-app_metadata_manager actor
+AppMetadataManager actor
 """
 from django.http import HttpResponse
 from main.utils.logger import log_trigger, log_writer
