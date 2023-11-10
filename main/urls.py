@@ -13,10 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import os
+from dotenv import load_dotenv
 from django.contrib import admin
 from django.urls import path, include
 
+load_dotenv()
+data_mgt_version = os.environ.get("DATA_MGT_VERSION")
+
 urlpatterns = [
-    path('api/1.0/', include('main.apps.central_layer_data_mgt.api.urls')),
+    path(f"api/{data_mgt_version}", include('main.apps.central_layer_data_mgt.api.urls')),
     path('admin/', admin.site.urls),
 ]
