@@ -1,2 +1,7 @@
 [INFO] time: 2023-11-10 04:43:04, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
 [INFO] time: 2023-11-10 04:43:04, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: add_pipeline_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-10 04:50:17, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-10 04:50:17, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_all_model_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-10 04:50:44, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-10 04:50:44, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_all_model_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-10 04:50:44, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: modify_pipeline_metadata, payload: {'test': '123', 'test2': '1234'}

@@ -21,7 +21,7 @@ class ActorTest(TestCase):
         pass
         """
         response = self.client.post(
-            path="http://140.118.122.148:30302/api/1.0/central_layer_data_mgt/PipelineMetadataManager/modify_pipeline_metadata",
+            path="http://140.118.122.148:30302/api/1.0/central_layer_data_mgt/ModelMetadataManager/delete_all_model_metadata",
             data=json.dumps({'test': '123', "test2": "1234"}),
             content_type='application/json'
         )
