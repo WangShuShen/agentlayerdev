@@ -47,3 +47,14 @@ def modify_application_metadata(request):
     except Exception as e:
         log_writer('ERROR', modify_application_metadata, (request,), message=e)
         return HttpResponse("modify_application_metadata error")
+
+@log_trigger("INFO")
+def delete_all_application_metadata(request):
+    """
+    delete all the application metadata
+    """
+    try:
+        return HttpResponse("delete_all_application_metadata finish")
+    except Exception as e:
+        log_writer('ERROR', delete_all_application_metadata, (request,), message=e)
+        return HttpResponse("delete_all_application_metadata error")
