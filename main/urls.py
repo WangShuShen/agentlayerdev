@@ -22,6 +22,6 @@ load_dotenv()
 data_mgt_version = os.environ.get("DATA_MGT_VERSION")
 
 urlpatterns = [
-    path(f"api/{data_mgt_version}", include('main.apps.central_layer_data_mgt.api.urls')),
+    path(f"api/{data_mgt_version}/", include('main.apps.central_layer_data_mgt.api.urls')),
     path('admin/', admin.site.urls),
 ]

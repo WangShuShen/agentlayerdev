@@ -2,8 +2,8 @@
 test api
 """
 import os
-from dotenv import load_dotenv
 import json
+from dotenv import load_dotenv
 from django.test import TestCase, Client
 
 load_dotenv()

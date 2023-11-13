@@ -1,0 +1,9 @@
+[INFO] time: 2023-11-13 09:02:31, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-13 09:02:53, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: save_pipeline_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-13 09:03:07, module: central_layer_data_mgt, actor: ModelMetadataManager, function: save_model_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-13 09:10:26, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-13 09:10:26, module: central_layer_data_mgt, actor: ModelMetadataManager, function: save_model_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-13 09:10:26, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: save_pipeline_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-13 09:10:51, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-13 09:10:51, module: central_layer_data_mgt, actor: ModelMetadataManager, function: save_model_metadata, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-13 09:10:51, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: save_pipeline_metadata, payload: {'test': '123', 'test2': '1234'}
