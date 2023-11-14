@@ -120,3 +120,4 @@
 [INFO] time: 2023-11-14 12:13:23, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: delete_pipeline_metadata, payload: Invalid JSON or empty payload
 [INFO] time: 2023-11-14 12:13:23, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_model_metadata, payload: Invalid JSON or empty payload
 [INFO] time: 2023-11-14 12:13:23, module: model_file_mgt, actor: ModelFileManager, function: delete_model_file, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:47:22, module: central_layer_data_mgt, actor: AppMetadataManager, function: modify_application_metadata, payload: Invalid JSON or empty payload
