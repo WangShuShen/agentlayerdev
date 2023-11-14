@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'main.apps.inference_layer_data_mgt',
     'main.apps.model_file_mgt',
     'main.apps.central_layer_data_mgt',
     'django.contrib.admin',
