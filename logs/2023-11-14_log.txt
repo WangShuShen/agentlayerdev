@@ -106,3 +106,17 @@
 [INFO] time: 2023-11-14 11:47:48, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: add_pipeline_metadata, payload: Invalid JSON or empty payload
 [INFO] time: 2023-11-14 11:47:48, module: central_layer_data_mgt, actor: ModelMetadataManager, function: add_model_metadata, payload: Invalid JSON or empty payload
 [INFO] time: 2023-11-14 11:47:48, module: model_file_mgt, actor: ModelFileManager, function: save_model_file, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:09:26, module: central_layer_data_mgt, actor: AppMetadataManager, function: delete_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:09:26, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: delete_pipeline_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:09:26, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_model_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:10:20, module: central_layer_data_mgt, actor: AppMetadataManager, function: delete_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:10:20, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: delete_pipeline_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:10:20, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_model_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:12:21, module: central_layer_data_mgt, actor: AppMetadataManager, function: delete_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:12:21, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: delete_pipeline_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:12:21, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_model_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:12:21, module: model_file_mgt, actor: ModelFileManager, function: delete_model_file, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:13:23, module: central_layer_data_mgt, actor: AppMetadataManager, function: delete_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:13:23, module: central_layer_data_mgt, actor: PipelineMetadataManager, function: delete_pipeline_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:13:23, module: central_layer_data_mgt, actor: ModelMetadataManager, function: delete_model_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-14 12:13:23, module: model_file_mgt, actor: ModelFileManager, function: delete_model_file, payload: Invalid JSON or empty payload
