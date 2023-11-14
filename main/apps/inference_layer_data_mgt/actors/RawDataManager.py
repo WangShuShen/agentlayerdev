@@ -2,8 +2,10 @@
 RawDataManager actor
 """
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from main.utils.logger import log_trigger, log_writer
 
+@csrf_exempt
 @log_trigger("INFO")
 def add_raw_data(request):
     """
@@ -15,6 +17,7 @@ def add_raw_data(request):
         log_writer('ERROR', add_raw_data, (request,), message=e)
         return HttpResponse("add_raw_data error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def send_all_raw_data(request):
     """

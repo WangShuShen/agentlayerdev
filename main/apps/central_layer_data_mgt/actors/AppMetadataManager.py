@@ -2,8 +2,10 @@
 AppMetadataManager actor
 """
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from main.utils.logger import log_trigger, log_writer
 
+@csrf_exempt
 @log_trigger("INFO")
 def save_application_metadata(request):
     """
@@ -15,6 +17,7 @@ def save_application_metadata(request):
         log_writer('ERROR', save_application_metadata, (request,), message=e)
         return HttpResponse("save_application_metadata error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def add_application_metadata(request):
     """
@@ -26,6 +29,7 @@ def add_application_metadata(request):
         log_writer('ERROR', add_application_metadata, (request,), message=e)
         return HttpResponse("add_application_metadata error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def delete_application_metadata(request):
     """
@@ -37,6 +41,7 @@ def delete_application_metadata(request):
         log_writer('ERROR', delete_application_metadata, (request,), message=e)
         return HttpResponse("delete_application_metadata error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def modify_application_metadata(request):
     """
@@ -48,6 +53,7 @@ def modify_application_metadata(request):
         log_writer('ERROR', modify_application_metadata, (request,), message=e)
         return HttpResponse("modify_application_metadata error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def delete_all_application_metadata(request):
     """

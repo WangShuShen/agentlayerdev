@@ -2,8 +2,10 @@
 InferenceResultManager actor
 """
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from main.utils.logger import log_trigger, log_writer
 
+@csrf_exempt
 @log_trigger("INFO")
 def add_inference_result(request):
     """
@@ -15,6 +17,7 @@ def add_inference_result(request):
         log_writer('ERROR', add_inference_result, (request,), message=e)
         return HttpResponse("add_inference_result error")
 
+@csrf_exempt
 @log_trigger("INFO")
 def send_all_inference_result(request):
     """
