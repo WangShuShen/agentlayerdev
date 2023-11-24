@@ -7,3 +7,5 @@
 [INFO] time: 2023-11-24 05:48:19, module: inference_layer_data_mgt, actor: InferenceResultManager, function: add_inference_result, payload: {'test': '123', 'test2': '1234'}
 [INFO] time: 2023-11-24 05:48:19, module: inference_layer_data_mgt, actor: RawDataManager, function: add_raw_data, payload: {'test': '123', 'test2': '1234'}
 [INFO] time: 2023-11-24 05:48:19, module: model_file_mgt, actor: ModelFileManager, function: save_model_file, payload: {'test': '123', 'test2': '1234'}
+[INFO] time: 2023-11-24 05:53:17, module: inference_layer_data_mgt, actor: DeployModelDataManager, function: delete_positionid_data, payload: Invalid JSON or empty payload
+[INFO] time: 2023-11-24 06:07:35, module: inference_layer_data_mgt, actor: DeployModelDataManager, function: delete_all_positionid_data, payload: Invalid JSON or empty payload
