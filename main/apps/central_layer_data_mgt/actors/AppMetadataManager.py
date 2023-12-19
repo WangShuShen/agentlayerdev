@@ -1,10 +1,11 @@
 """
 AppMetadataManager actor
 """
+import json
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from main.utils.logger import log_trigger, log_writer
-import json
+from ..models.application import Application
 
 @csrf_exempt
 @log_trigger("INFO")
@@ -15,7 +16,14 @@ def save_application_metadata(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body).get("application_metadata")
-            print(data[0])
+            for d in data:
+                app_data = Application(
+                    application_uid = d["application_uid"],
+                    application_created_time = d["application_created_time"],
+                    application_description = d["application_description"],
+                    application_name = d["application_name"]
+                )
+                app_data.save()
             return HttpResponse("save_application_metadata finish")
         except Exception as e:
             log_writer('ERROR', save_application_metadata, (request,), message=e)
