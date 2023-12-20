@@ -1,21 +1,30 @@
 """
 ModelFileManager actor
 """
-from django.http import HttpResponse
+import json
+from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from main.utils.logger import log_trigger, log_writer
 
 @csrf_exempt
-@log_trigger("INFO")
+# @log_trigger("INFO")
 def save_model_file(request):
     """
     save the model file
     """
-    try:
-        return HttpResponse("save_model_file finish")
-    except Exception as e:
-        log_writer('ERROR', save_model_file, (request,), message=e)
-        return HttpResponse("save_model_file error")
+    if request.method == 'POST':
+        try:
+            # for one file
+            model_name = request.POST.get('model_name')
+            model_path = "main/apps/model_file_mgt/model_files/" + model_name
+            with open(model_path, 'wb') as file:
+                file.write(request.FILES['upload_file'].read())
+            return HttpResponse("save_model_file finish")
+        except Exception as e:
+            log_writer('ERROR', save_model_file, (request,), message=e)
+            return HttpResponse("save_model_file error")
+    else:
+        return JsonResponse({"error":"Invalid request method"})
 
 @csrf_exempt
 @log_trigger("INFO")
