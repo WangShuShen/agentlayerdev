@@ -1,0 +1,12 @@
+[INFO] time: 2023-12-24 18:54:51, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 18:55:27, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 18:55:54, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 18:56:17, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[ERROR] time: 2023-12-24 18:56:20, module: central_layer_data_mgt, actor: AppMetadataManager, function: save_application_metadata, message: Expecting value: line 1 column 1 (char 0)
+[INFO] time: 2023-12-24 19:00:55, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:02:34, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:11:19, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:11:31, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:11:43, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:12:16, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload
+[INFO] time: 2023-12-24 19:13:55, module: central_layer_data_mgt, actor: AppMetadataManager, function: test_add_application_metadata, payload: Invalid JSON or empty payload

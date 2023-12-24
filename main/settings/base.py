@@ -9,9 +9,14 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
+from dotenv import load_dotenv
 from pathlib import Path
 
+load_dotenv()
+secret_keys = os.environ.get('SECRET_KEY')
+debug_mode = os.environ.get('DEBUG')
+allowed_host=os.environ.get('ALLOWED_HOSTS')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,14 +25,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7+dgq$i35t9xm6-)2885p*=96d(0x7-3y0u+z!%^x5gf=8ibf5'
+SECRET_KEY = secret_keys
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = debug_mode
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS =  [host.strip() for host in allowed_host.split(',') if host.strip()]
 
-
+INFLUXDB_URL = 'http://localhost:30323'
+INFLUXDB_TOKEN = 'BItWyHWwyiPtHb4ZXtZi6IFQ6qEKjQ1IJM3JEovym7mB4UlZB78gSv3MQMUutfv6g9EeXepGDYz1hqC1lv1cfw=='
+INFLUXDB_ORG = 'ntust'
+INFLUXDB_BUCKET = 'test_bucket'
 # Application definition
 
 INSTALLED_APPS = [
@@ -82,8 +90,8 @@ DATABASES = {
         'NAME': 'agent_layer',
         'USER': 'postgres',
         'PASSWORD': 'admin',
-        'HOST': '192.168.183.128',
-        'POST': '5432'
+        'HOST': '192.168.68.129',
+        'PORT': '5432'
     }
 }
 
